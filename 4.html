@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>轮播图布局</title>
+	<style type="text/css">
+	     * {
+	     	margin: 0;
+	     	padding: 0;
+	     }
+
+	     ul,ol {
+	     	list-style: none;
+	     }
+
+	     img {
+	     	display: block;
+	     }
+
+         .carousel {
+         	width: 880px;
+         	height: 550px;
+         	border: 1px solid red;
+         	margin: 50px auto;
+         	overflow: hidden;
+         	position: relative;
+         }   
+
+         .btns a {
+         	position: absolute;
+            width: 55px;
+            height: 55px;
+            top: 50%;
+            margin-top: -27.5px;
+         }
+
+         .btns a.left {
+             background: url(img/btnL.png) no-repeat;
+             left: 18px; 
+         }
+
+         .btns a.right {
+             background: url(img/btnR.png) no-repeat;
+             right: 18px; 
+         }
+
+         .ctrl {
+         	position: absolute;
+         	bottom: 28px;
+         	width: 168px;
+         	left: 50%;
+         	padding-left: 8px;
+         	margin-left:-88px;
+         }
+
+         .ctrl li {     
+         	width: 20px;
+         	height: 20px;
+         	border-radius: 10px;
+         	background-color: #fff;
+         	text-align: center;
+         	margin-right: 8px;
+         	line-height: 20px;
+         	float: left;
+         }
+
+	</style>
+</head>
+<body>
+	<!--第一步 合理网页布局-->
+	<div class="carousel">
+		<div>
+			<ul>
+				<li><a href="#"><img src="img/c1.jpg" alt="" /></a></li>
+				<li><a href="#"><img src="img/c2.jpg" alt="" /></a></li>
+				<li><a href="#"><img src="img/c3.jpg" alt="" /></a></li>
+				<li><a href="#"><img src="img/c4.jpg" alt="" /></a></li>
+				<li><a href="#"><img src="img/c5.jpg" alt="" /></a></li>
+				<li><a href="#"><img src="img/c6.jpg" alt="" /></a></li>
+			</ul>
+		</div>
+		<div class="btns">
+			<a href="javascript:;" class="left"></a>
+			<a href="javascript:;" class="right"></a>
+		</div>
+		<div class="ctrl">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
